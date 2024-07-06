@@ -7,7 +7,6 @@ The **TestApp** class in the example package contains examples and presents the 
 Exceptions are thrown using the **JOException** class;
 only the specified checks must be carried out and not all possible ones.
 If a method throws an exception there is no change in the data present in the main class.
-Suggestion: every time you have implemented a method, run *TestApp* to check the result.
 
 ## Skills, positions
 
