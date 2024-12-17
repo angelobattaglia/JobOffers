@@ -55,7 +55,7 @@ public class Main {
             int distance = jo.calculateDistance("New York", "San Francisco");
             System.out.println("Distance between New York and San Francisco: " + distance);
 
-            // Getting candidates by distance
+            // Getting candidates by distance (this one is the one to fix)
             // List<String> candidatesByDistance = jo.getCandidatesbyDistance("juniorProgrammer", 3500);
             // System.out.println("Candidates within 3500 miles for juniorProgrammer: " + candidatesByDistance);
 
