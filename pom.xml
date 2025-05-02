@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://maven.apache.org/POM/4.0.0 
+           http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <!-- 1. Coordinates -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.angelobattaglia</groupId>
+  <artifactId>joboffers</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!-- 2. Project Metadata -->
+  <name>JobOffers</name>
+  <description>A utility for parsing and processing job offers, by Angelo Battaglia.</description>
+  <url>https://github.com/angelobattaglia/JobOffers</url>
+
+  <!-- 3. License (optional – uncomment/adapt if you have one) -->
+  <!--
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  -->
+
+  <!-- 4. Developer Info -->
+  <developers>
+    <developer>
+      <id>angelobattaglia</id>
+      <name>Angelo Battaglia</name>
+      <url>https://github.com/angelobattaglia</url>
+    </developer>
+  </developers>
+
+  <!-- 5. SCM (GitHub) -->
+  <scm>
+    <connection>scm:git:git://github.com/angelobattaglia/JobOffers.git</connection>
+    <developerConnection>scm:git:ssh://github.com/angelobattaglia/JobOffers.git</developerConnection>
+    <url>https://github.com/angelobattaglia/JobOffers</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <!-- 6. Java version -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <!-- 7. Dependencies -->
+  <dependencies>
+    <!-- Add any libraries you need here, e.g. 
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+    -->
+  </dependencies>
+
+  <!-- 8. Build / Plugins -->
+  <build>
+    <plugins>
+      <!-- 8a. Compiler plugin -->
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+
+      <!-- 8b. Exec plugin to run your Main class -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <!-- Fully qualified name of your entry point -->
+          <mainClass>joboffers.Main</mainClass>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,5 +1,6 @@
-import jobOffers.*;
+package joboffers;
 
+import jobOffers.*;
 import java.util.List;
 import java.util.TreeMap;
 
