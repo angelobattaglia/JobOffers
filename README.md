@@ -1,5 +1,5 @@
 # Job Offers
-A robust backend system for a career management application. Supporting skill and position tracking, candidate and consultant management, application handling, and localized job searches.
+A robust backend system for a career management application. Supporting skill and position tracking, candidate and consultant management, application handling and localized job searches.
 
 ## Running it
 
